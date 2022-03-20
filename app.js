@@ -25,7 +25,7 @@ setInterval(() => {
 
     var second = document.querySelector('#second')
     second.innerHTML = second_
-
+    // this is a simple comment
 
 
 }, 1000)
