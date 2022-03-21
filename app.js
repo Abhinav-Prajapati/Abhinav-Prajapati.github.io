@@ -12,19 +12,31 @@ setInterval(() => {
 
     var hour = document.querySelector('#hour')
 
+
+
+
     if (hour_ > 12) {
-        hour.innerHTML = hour_ - 12
+        hour.innerHTML = numToString(hour_ - 12)
     }
     else {
-        hour.innerHTML = hour_
+        hour.innerHTML = numToString(hour_)
     }
+
+
+
+    function numToString(num) {
+        if (num < 10) {
+            return '0' + num
+        }
+    }
+
 
 
     var min = document.querySelector('#min')
-    min.innerHTML = min_
+    min.innerHTML = numToString(min_)
 
     var second = document.querySelector('#second')
-    second.innerHTML = second_
+    second.innerHTML = numToString(second_)
     // this is a simple comment
 
 
