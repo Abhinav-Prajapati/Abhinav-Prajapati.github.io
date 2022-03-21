@@ -22,22 +22,25 @@ setInterval(() => {
         hour.innerHTML = numToString(hour_)
     }
 
-
-
-    function numToString(num) {
-        if (num < 10) {
-            return '0' + num
-        }
-    }
-
-
-
     var min = document.querySelector('#min')
     min.innerHTML = numToString(min_)
 
     var second = document.querySelector('#second')
     second.innerHTML = numToString(second_)
     // this is a simple comment
+
+
+    function numToString(num) {
+        if (num < 10) {
+            return '0' + num
+        }
+        else {
+            return num
+        }
+    }
+
+
+
 
 
 }, 1000)
